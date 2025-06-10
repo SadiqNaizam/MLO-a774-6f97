@@ -4,89 +4,72 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Ensure 'Nunito' font is linked in your HTML or imported in your main CSS. Example: <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet"> */
+    --font-sans: "Nunito", sans-serif;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --background: 210 17% 98%; /* Light: Soft off-white (#F8F9FA) */
+    --foreground: 210 10% 23%; /* Light: Dark gray (#343A40) */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: 210 17% 98%;
+    --card-foreground: 210 10% 23%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 210 17% 98%;
+    --popover-foreground: 210 10% 23%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: 200 100% 46%; /* Light: Doraemon Blue (#00A0E9) */
+    --primary-foreground: 210 40% 10%; /* Light: Dark blue/black for contrast */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 210 16% 85%; /* Light: Lighter gray (#D3D9DE) */
+    --secondary-foreground: 210 10% 23%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 16% 93%; /* Light: Light gray (#E9ECEF) */
+    --muted-foreground: 210 10% 40%; /* Light: Medium gray (#5C656F) */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 355 100% 35%; /* Light: Doraemon Red (Darker for contrast) (#B3000C) */
+    --accent-foreground: 0 0% 100%; /* Light: White */
+    
+    --accent-yellow: 51 100% 50%; /* Light: Bell Yellow (#FFD700) */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 355 100% 35%; /* Light: Doraemon Red (Darker for contrast) */
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 210 16% 90%; /* Light: Light gray (#E1E5E8) */
+    --input: 210 16% 90%;
+    --ring: 51 100% 50%; /* Light: Bell Yellow (for focus) */
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.625rem; /* 10px */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 7%; /* Dark: Near-black (#121212) */
+    --foreground: 210 17% 95%; /* Dark: Light off-white (#F0F4F8) */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 10% 15%; /* Dark: Dark gray (#212529) */
+    --card-foreground: 210 17% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 10% 15%;
+    --popover-foreground: 210 17% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 202 100% 28%; /* Dark: Deep Night Blue (#005A8D) */
+    --primary-foreground: 210 17% 95%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 10% 25%; /* Dark: Medium-dark gray (#3A3F44) */
+    --secondary-foreground: 210 17% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 10% 20%; /* Dark: Dark gray (#2C3034) */
+    --muted-foreground: 210 17% 70%; /* Dark: Lighter gray (#A6B1BD) */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 355 100% 35%; /* Dark: Doraemon Red (Darker for contrast) (#B3000C) */
+    --accent-foreground: 210 17% 95%; /* Dark: Light off-white */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --accent-yellow: 51 80% 60%; /* Dark: Soft Yellow (#FFEB80) */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive: 355 100% 35%;
+    --destructive-foreground: 210 17% 95%;
+
+    --border: 210 10% 20%; /* Dark: Dark gray (#2C3034) */
+    --input: 210 10% 20%;
+    --ring: 51 80% 60%; /* Dark: Soft Yellow (for focus) */
   }
 }
 
@@ -97,5 +80,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
